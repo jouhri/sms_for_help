@@ -1,5 +1,6 @@
 class ReceiveTextController < ApplicationController
   def handlesms
+  	head :ok
   	p params
   	puts "HOHOHOHOOHOHOHO"
   	@alert = Alert.new
