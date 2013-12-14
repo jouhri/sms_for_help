@@ -1,5 +1,6 @@
 SmsForHelp::Application.routes.draw do
-  root  "receive_text#handlesms"
+  #root  "receive_text#handlesms"
+  root  "alert#index"
   post "/handlesms" => "receive_text#handlesms"
 
   resources :alert
