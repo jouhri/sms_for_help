@@ -5,7 +5,7 @@ class ReceiveTextController < ApplicationController
   	@alert.body = params[:Body]
   	@alert.to = params[:To]
   	@alert.from_country = params[:FromCountry]
-  	@alert.smd_status = params[:SmsStatus]
+  	@alert.sms_satuts = params[:SmsStatus]
   	@alert.from = params[:From]
  #  	@twilio_client = Twilio::REST::Client.new "AC8157b2db1250f939730a35d1117015d8", "2e8c13201e1b7ac8c8967cdfb8da0aac"
  #  	@messages =  @twilio_client.account.messages.list()
