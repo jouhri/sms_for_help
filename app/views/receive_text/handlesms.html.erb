@@ -1,2 +1,6 @@
-<h1>ReceiveText#handlesms</h1>
-<p>Find me in app/views/receive_text/handlesms.html.erb</p>
+<% @messages.each do | m |%>
+	<div>
+		<p>from : <%= m.from%> date : <%= m.date_created%></p>
+		<p>body : <%= m.body%></p>
+	</div>
+<%end%>
