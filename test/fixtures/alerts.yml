@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  body: MyString
+  to: MyString
+  from_country: MyString
+  sms_satuts: MyString
+  from: MyString
+
+two:
+  body: MyString
+  to: MyString
+  from_country: MyString
+  sms_satuts: MyString
+  from: MyString

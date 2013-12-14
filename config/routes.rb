@@ -2,6 +2,8 @@ SmsForHelp::Application.routes.draw do
   root  "receive_text#handlesms"
   post "/handlesms" => "receive_text#handlesms"
 
+  resources :alert
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
