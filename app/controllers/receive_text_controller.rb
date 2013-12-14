@@ -1,6 +1,7 @@
 class ReceiveTextController < ApplicationController
   def handlesms
   	p params
+  	puts "HOHOHOHOOHOHOHO"
   	@alert = Alert.new
   	@alert.body = params[:Body]
   	@alert.to = params[:To]
