@@ -2,3 +2,16 @@
 	<p>form : <%= alert.from%>    country : <%= alert .from_country%>   </p>
 	<p><%= alert.body%></p>
 <%end%>
+
+<script>
+
+var dispatcher = new WebSocketRails('localhost:3000/websocket');
+
+// dispatcher.trigger('tasks.create', task);
+
+dispatcher.bind('tasks.create_success', function(task) {
+  console.log('successfully created ' + task.name);
+  console.log(task.alert)
+});
+
+</script>

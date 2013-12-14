@@ -1,1 +1,13 @@
-<%= link_to "all SOS ",  alert_index_path%>
+
+<script>
+	var task = {
+  		name: 'Start taking advantage of WebSockets',
+  		completed: false
+  		alert : <%= @alert %>
+	}
+
+	var dispatcher = new WebSocketRails('localhost:3000/websocket');
+
+	dispatcher.trigger('tasks.create', task);
+
+</script>

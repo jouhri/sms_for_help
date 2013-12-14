@@ -15,6 +15,7 @@ end
 
 # twilio
 gem 'twilio-ruby'
+gem 'websocket-rails'
 
 
 # Use SCSS for stylesheets
