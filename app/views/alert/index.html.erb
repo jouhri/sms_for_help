@@ -13,9 +13,9 @@
 	// 	completed: false
 	// }
 
-	//var dispatcher = new WebSocketRails('sms-for-help.herokuapp.com/websocket');
+	var dispatcher = new WebSocketRails('sms-for-help.herokuapp.com/websocket');
 
-	var dispatcher = new WebSocketRails('localhost:3000/websocket');
+	//var dispatcher = new WebSocketRails('localhost:3000/websocket');
 	var channel = dispatcher.subscribe('chan');
 	 
 
@@ -24,7 +24,7 @@
 		$("#new_text").text('<p>' + data + '</p>');
   		console.log('channel event received: ' + data);
   		console.log(data);
-  		// $("#new_text").append('<div><p>' + data.from + "   " +  data.from_country  + '</p>' + '<p>' +  data.body + '</p></div>');
+  		 $("#new_text").append('<div><p>' + data.from + "   " +  data.from_country  + '</p>' + '<p>' +  data.body + '</p></div>');
 	});
 
 	// dispatcher.bind('tasks.create_success', function(task) {
