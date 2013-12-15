@@ -1,30 +1,31 @@
 
-<% 3.times do %>
-<div class="row">
-	<div class="small-12 large-8 columns" name="bloc-description">
+<% 3.times do %><br/>
+<div class="row element-liste"><br/>
+	<div class="small-12 large-8 columns infoshaut" name="bloc-description">
 		<div class="row" name="infos-haut">
-			<div class="small-12 large-3 columns" name="num-billet">N°Billet</div>
+			<div class="small-12 large-3 columns" name="num-billet"><b>N°Billet:</b> 8768768</div>
 			<div class="small-12 large-5 columns" name="date">22/12/2013</div>
 			<div class="small-12 large-4 columns" name="num-tel">0650999536</div>	
 		</div>
-		<div class="row" name="champ-description">
-			<div class="small-12">Texte description</div>
+		<div class="row description" name="champ-description">
+			<p>Donec at nunc laoreet, laoreet erat ut, scelerisque ligula. Vivamus ac augue et neque suscipit porttitor vel eget augue. Nunc faucibus sem eu sapien pharetra tristique. Integer consectetur dolor nec risus semper, lobortis faucibus metus aliquam. Vestibulum condimentum vel orci sit amet sodales. Sed convallis metus eu purus dapibus laoreet. Ut feugiat adipiscing libero id dictum. Nulla magna dui, hendrerit quis nunc at, dignissim sollicitudin nulla. Aliquam tristique nisl ut posuere commodo. </p>
 		</div>
-		<div class="row" name="infos-complementaires">
+		<div class="row infosbas" name="infos-complementaires">
 			<div class="small-12 large-6 columns">Nombre de personnes concernées</div>
 			<div class="small-12 large-6 columns">Infos</div>
 		</div>	
-		<div class="row" name="infos-bas">
-			<div class="small-3">Etoile</div>
+		<div class="row infosbas" name="infos-bas">
+			<img src="etoile.png" width="32px" height="32px">
 		</div>	
 	</div>
 	<div class="small-12 large-4 columns" name="bloc-localisation">
-		<div class="adress">Adresse</div>
-		<div class="plan"><iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x47e66d5f8b3a2213%3A0x21c89d9c32665a87!2s55+Rue+de+Vincennes%2C+93100+Montreuil!5e0!3m2!1sfr!2sfr!4v1387064116895" width="100%" height="300" frameborder="0" style="border:0"></iframe></div>
-		<div class="row" name="buttons">
-			<div class="small-6">Archiver</div>
-			<div class="small-6">Soumettre</div>
+		<div class="row adress">55 Rue de Vincennes, Montreuil</div>
+		<div class="row plan">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x47e66d5f8b3a2213%3A0x21c89d9c32665a87!2s55+Rue+de+Vincennes%2C+93100+Montreuil!5e0!3m2!1sfr!2sfr!4v1387064116895"  width="100%" height="200" frameborder="0" style="border:0">
+			</iframe>		
+			<a href="#" class="button alert expand">Archiver</a>
+			<a href="#" class="button success expand">Soumettre</a>
 		</div>	
 	</div>
-</div>
+</div><br/>
 <% end %>
