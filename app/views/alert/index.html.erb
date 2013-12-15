@@ -1,10 +1,10 @@
+<div id="new_text">
+</div>
 <div>
 	<% @alerts.each do | alert |%>
 		<p>form : <%= alert.from%>    country : <%= alert .from_country%>   </p>
 		<p><%= alert.body%></p>
 	<%end%>
-</div>
-<div id="new_text">
 </div>
 
 <script>
@@ -23,7 +23,7 @@
 	channel.bind('new_text', function(data) {
   		console.log('channel event received: ' + data);
   		console.log(data);
-  		$("#new_text").text(data)
+  		$("#new_text").append('<div><p>' + data.from + "   " +  data.from_country  + '</p>' + '<p>' +  data.body + '</p></div>')
 	});
 
 
