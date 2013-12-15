@@ -1,7 +1,10 @@
-<% @alerts.each do | alert |%>
-	<p>form : <%= alert.from%>    country : <%= alert .from_country%>   </p>
-	<p><%= alert.body%></p>
-<%end%>
+<div>
+	<% @alerts.each do | alert |%>
+		<p>form : <%= alert.from%>    country : <%= alert .from_country%>   </p>
+		<p><%= alert.body%></p>
+	<%end%>
+</div>
+
 
 <script>
 	var task = {
@@ -9,7 +12,7 @@
 		completed: false
 	}
 
-	var dispatcher = new WebSocketRails('sms-for-help.herokuapp.com:3000');
+	var dispatcher = new WebSocketRails('sms-for-help.herokuapp.com/websocket');
 	// var dispatcher = new WebSocketRails('localhost:3000/websocket');
 
 	 dispatcher.trigger('tasks.create', task);

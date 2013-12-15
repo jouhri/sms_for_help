@@ -6,7 +6,7 @@
   		alert : <%= @alert %>
 	}
 
-	var dispatcher = new WebSocketRails('sms-for-help.herokuapp.com:3000');
+	var dispatcher = new WebSocketRails('sms-for-help.herokuapp.com:3000/websocket');
 		// var dispatcher = new WebSocketRails('localhost:3000/websocket');
 
 	dispatcher.trigger('tasks.create', task);
