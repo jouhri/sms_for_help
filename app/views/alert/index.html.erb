@@ -21,12 +21,11 @@
 
 	// dispatcher.trigger('tasks.create', task);
 	channel.bind('new_text', function(data) {
-		$("#new_text").text('<p>' + data.body + '</p>');
+		$("#new_text").text('<p>' + data + '</p>');
   		console.log('channel event received: ' + data);
   		console.log(data);
   		// $("#new_text").append('<div><p>' + data.from + "   " +  data.from_country  + '</p>' + '<p>' +  data.body + '</p></div>');
 	});
-
 
 	// dispatcher.bind('tasks.create_success', function(task) {
 	//   console.log('successfully created ' + task.name);
