@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
+gem 'zurb-foundation'
 
 # Use sqlite3 as the database for Active Record
 group :development do
@@ -19,6 +20,8 @@ end
 gem 'twilio-ruby'
 gem 'websocket-rails'
 gem 'redis'
+#ggl maps
+gem 'gmaps4rails'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'

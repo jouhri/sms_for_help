@@ -45,6 +45,7 @@ GEM
     faye-websocket (0.7.0)
       eventmachine (>= 0.12.0)
       websocket-driver (>= 0.3.0)
+    gmaps4rails (2.1.1)
     hike (1.2.3)
     hiredis (0.4.5)
     i18n (0.6.9)
@@ -66,7 +67,7 @@ GEM
     multi_json (1.8.2)
     pg (0.17.0)
     polyglot (0.3.3)
-    pry (0.9.12.3)
+    pry (0.9.12.4)
       coderay (~> 1.0)
       method_source (~> 0.8)
       slop (~> 3.4)
@@ -103,7 +104,7 @@ GEM
     sdoc (0.3.20)
       json (>= 1.1.3)
       rdoc (~> 3.10)
-    slop (3.4.6)
+    slop (3.4.7)
     sprockets (2.10.1)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -144,12 +145,15 @@ GEM
       rails
       redis
       thin
+    zurb-foundation (4.3.2)
+      sass (>= 3.2.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  gmaps4rails
   jbuilder (~> 1.2)
   jquery-rails
   pg
@@ -165,3 +169,4 @@ DEPENDENCIES
   twilio-ruby
   uglifier (>= 1.3.0)
   websocket-rails
+  zurb-foundation
