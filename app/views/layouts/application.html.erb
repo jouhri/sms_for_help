@@ -22,6 +22,24 @@
   </head>
 
   <body>
+    <div class="row"> 
+    <div class="small-10 large-10 columns">
+    <%= image_tag "logo.png", size:"170", style:"margin: 20px;float:left;" %>
+    <br/><br/><h1>00012</h1>
+    <a href="#" class="button small round secondary" style="clear:both;">Logout</a>
+    </div>
+    <a href="#">
+    <div class="small-2 large-2 columns">
+    <span data-tooltip class="has-tip" title="Si l'information vous semble pertinente, faites la remonter aux décideurs en cochant l'étoile. ">
+    <br/><br/><br/>
+    <%= image_tag "question-mark.png", size:"90", style:"padding:5px;"  %>
+    </span>
+    </div>
+    </a>
+    
+    </div>
+
+
     <%= render 'layouts/partials/blocresultat' %>
     <%= yield %>
 
