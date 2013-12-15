@@ -23,7 +23,8 @@
 	channel.bind('new_text', function(data) {
   		console.log('channel event received: ' + data);
   		console.log(data);
-  		$("#new_text").append('<div><p>' + data.from + "   " +  data.from_country  + '</p>' + '<p>' +  data.body + '</p></div>')
+  		$("#new_text").append("<p>NEW TEXT YESSSSSSSSS</p>");
+  		$("#new_text").append('<div><p>' + data.from + "   " +  data.from_country  + '</p>' + '<p>' +  data.body + '</p></div>');
 	});
 
 
