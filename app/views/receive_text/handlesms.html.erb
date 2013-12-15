@@ -1,14 +1,14 @@
 
 <script>
-	var task = {
-  		name: 'Start taking advantage of WebSockets',
-  		completed: false
-  		alert : <%= @alert %>
-	}
+	// var task = {
+ //  		name: 'Start taking advantage of WebSockets',
+ //  		completed: false
+ //  		alert : <%= @alert %>
+	// }
 
-	var dispatcher = new WebSocketRails('sms-for-help.herokuapp.com:3000/websocket');
-		// var dispatcher = new WebSocketRails('localhost:3000/websocket');
+	// var dispatcher = new WebSocketRails('sms-for-help.herokuapp.com:3000/websocket');
+	// 	// var dispatcher = new WebSocketRails('localhost:3000/websocket');
 
-	dispatcher.trigger('tasks.create', task);
+	// dispatcher.trigger('tasks.create', task);
 
 </script>

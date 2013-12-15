@@ -21,6 +21,7 @@ WebsocketRails.setup do |config|
   # multiple server instances.
   # * Requires Redis.
   config.synchronize = false
+  #config.synchronize = true
 
   # Uncomment and edit to point to a different redis instance.
   # Will not be used unless standalone or synchronization mode

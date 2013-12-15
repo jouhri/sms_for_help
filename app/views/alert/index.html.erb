@@ -4,7 +4,8 @@
 		<p><%= alert.body%></p>
 	<%end%>
 </div>
-
+<div id="new_text">
+</div>
 
 <script>
 	// var task = {
@@ -13,13 +14,22 @@
 	// }
 
 	var dispatcher = new WebSocketRails('sms-for-help.herokuapp.com/websocket');
-	// var dispatcher = new WebSocketRails('localhost:3000/websocket');
+
+	//var dispatcher = new WebSocketRails('localhost:3000/websocket');
+	var channel = dispatcher.subscribe('chan');
+	 
 
 	// dispatcher.trigger('tasks.create', task);
-
-	dispatcher.bind('tasks.create_success', function(task) {
-	  console.log('successfully created ' + task.name);
-	  console.log(task.alert)
+	channel.bind('new_text', function(data) {
+  		console.log('channel event received: ' + data);
+  		console.log(data);
+  		$("#new_text").text(data)
 	});
+
+
+	// dispatcher.bind('tasks.create_success', function(task) {
+	//   console.log('successfully created ' + task.name);
+	//   console.log(task.alert)
+	// });
 
 </script>
